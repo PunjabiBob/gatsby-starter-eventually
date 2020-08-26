@@ -40,7 +40,7 @@ export class EmailForm extends Component {
           name="email"
           id="email"
           placeholder="Email Address"
-        />
+        /><br></br>
         <textarea
           name="message"
           id="text"
@@ -48,7 +48,7 @@ export class EmailForm extends Component {
           cols="50"
           placeholder="Type a message to the seller."
         />
-
+        <br></br>
         <input type="submit" value="Contact Domain Owner" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
