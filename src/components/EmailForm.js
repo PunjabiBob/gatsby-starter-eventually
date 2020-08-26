@@ -46,7 +46,7 @@ export class EmailForm extends Component {
           id="text"
           rows="2"
           cols="50"
-          placeholder="I'm interested in purchasing this domain."
+          placeholder="Type a message to the seller."
         />
 
         <input type="submit" value="Contact Domain Owner" />
