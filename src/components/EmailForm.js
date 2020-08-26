@@ -28,7 +28,7 @@ export class EmailForm extends Component {
           placeholder="Email Address"
         />
         <input type="submit" value="Contact Domain Owner" />
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
         </span>
