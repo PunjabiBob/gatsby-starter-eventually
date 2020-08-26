@@ -23,8 +23,6 @@ export class EmailForm extends Component {
   onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-
-
     this.setState({ message: 'Thank you. The seller will be contact with you.' });
     setTimeout(() => {
       this.setState({ message: '' });
@@ -43,6 +41,13 @@ export class EmailForm extends Component {
           id="email"
           placeholder="Email Address"
         />
+        <input
+          type="text"
+          name="message"
+          id="text"
+          placeholder="I'm interested in purchasing this domain."
+        />
+        
         <input type="submit" value="Contact Domain Owner" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
