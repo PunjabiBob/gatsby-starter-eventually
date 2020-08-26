@@ -7,9 +7,24 @@ export class EmailForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+
   onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
+
+
     this.setState({ message: 'Thank you. The seller will be contact with you.' });
     setTimeout(() => {
       this.setState({ message: '' });
@@ -20,7 +35,7 @@ export class EmailForm extends Component {
     const { message } = this.state;
     return (
          
-        <form name="contact" id="signup-form" onSubmit={this.onSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form name="contact" id="signup-form" onSubmit={this.handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
        <input type="hidden" name="form-name" value="contact" />
        <input
           type="email"
