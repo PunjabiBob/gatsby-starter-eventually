@@ -10,7 +10,7 @@ export class EmailForm extends Component {
   onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.setState({ message: 'Thank you!' });
+    this.setState({ message: 'Thank you. The seller will be contact with you.' });
     setTimeout(() => {
       this.setState({ message: '' });
     }, 3000);
@@ -19,7 +19,7 @@ export class EmailForm extends Component {
   render() {
     const { message } = this.state;
     return (
-      <form id="signup-form" onSubmit={this.onSubmit} method="post" action="#">
+      <form id="signup-form" onSubmit={this.onSubmit} method="post" data-netlify="true">
         <input
           type="email"
           name="email"
