@@ -41,13 +41,12 @@ export class EmailForm extends Component {
           id="email"
           placeholder="Email Address"
         />
-        <input
-          type="text"
+        <textarea
           name="message"
           id="text"
           placeholder="I'm interested in purchasing this domain."
         />
-        
+
         <input type="submit" value="Contact Domain Owner" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
