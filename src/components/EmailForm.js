@@ -44,6 +44,8 @@ export class EmailForm extends Component {
         <textarea
           name="message"
           id="text"
+          rows="2"
+          cols="50"
           placeholder="I'm interested in purchasing this domain."
         />
 
