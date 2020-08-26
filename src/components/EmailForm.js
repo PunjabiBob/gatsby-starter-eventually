@@ -19,14 +19,8 @@ export class EmailForm extends Component {
   render() {
     const { message } = this.state;
     return (
-      
-     
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-          <input type="email" name="email" />
-      </form>
-
-
-      <form id="signup-form" onSubmit={this.onSubmit} method="post" data-netlify="true">
+         
+        <form id="signup-form" name="contact" onSubmit={this.onSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input
           type="email"
           name="email"
