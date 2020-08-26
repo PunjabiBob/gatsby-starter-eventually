@@ -33,22 +33,21 @@ export class EmailForm extends Component {
     const { message } = this.state;
     return (
          
-        <form name="contact" id="signup-form" onSubmit={this.handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+       <form name="contact" id="signup-form" onSubmit={this.handleSubmit} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
        <input type="hidden" name="form-name" value="contact" />
        <input
           type="email"
           name="email"
           id="email"
           placeholder="Email Address"
-        /><br></br>
+        />
         <textarea
           name="message"
           id="text"
           rows="2"
-          cols="50"
+          cols="25"
           placeholder="Type a message to the seller."
         />
-        <br></br>
         <input type="submit" value="Contact Domain Owner" />
         <span className={`${message ? 'visible success' : ''} message`}>
           {message}
