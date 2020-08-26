@@ -17,7 +17,7 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; VoipEquipment.com</li>
+        <li>&copy; 2020 VoipEquipment.com</li>
       </ul>
     </footer>
   );
