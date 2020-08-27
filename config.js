@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-eventually/`, 
   // social
-  heading: 'For Sale - VoipEquipment.com - US$3,900',
+  heading: 'For Sale - VoipEquipment.com US$3,900',
   subHeading:
     "This web domain is for sale. Buy VoipEquipment.com for US$3,900.",
   socialLinks: [
