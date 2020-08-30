@@ -21,7 +21,7 @@ const IndexPage = () => (
     <Header />
     <EmailForm />
     <Footer />
-    <SlideShow settings={settings} />
+    // <SlideShow settings={settings} />
   </Layout>
 );
 
