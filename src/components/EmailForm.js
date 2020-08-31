@@ -7,6 +7,12 @@ export class EmailForm extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   handleSubmit = e => {
     fetch("/", {
       method: "POST",
