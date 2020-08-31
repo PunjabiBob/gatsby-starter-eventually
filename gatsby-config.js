@@ -21,6 +21,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
     ],
 };
