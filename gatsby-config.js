@@ -29,5 +29,7 @@ module.exports = {
       mergeLinkHeaders: false,                      // boolean to turn off the default gatsby js headers (disabled by default, until gzip is fixed for server push)
       mergeCachingHeaders: true,                    // boolean to turn off the default caching headers
       transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
-  ],
+    },
+ 
+    ],
 };
